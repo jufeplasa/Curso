@@ -1,8 +1,7 @@
 package model;
 
 public class Curso {
-
-	private String nombre;
+	
 
 	private Estudiante primerEstudiante;
 	private Estudiante ultimoEstudiante;
@@ -10,30 +9,12 @@ public class Curso {
 
 	public Curso() {
 	}
-
-
-
-	public String getNombre() {
-		return nombre;
-	}
-
+	
 	public Estudiante getPrimerEstudiante() {
 		return primerEstudiante;
 	}
 
-	public void setPrimerEstudiante(Estudiante primerEstudiante) {
-		this.primerEstudiante = primerEstudiante;
-	}
 
-
-	public Estudiante getUltimoEstudiante() {
-		return ultimoEstudiante;
-	}
-
-
-	public void setUltimoEstudiante(Estudiante ultimoEstudiante) {
-		this.ultimoEstudiante = ultimoEstudiante;
-	}
 
 	public void addEstudiante(Estudiante nuevoE) {
 		if(primerEstudiante==null) {
